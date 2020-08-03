@@ -22,7 +22,7 @@ var currentSong = 0;          // current song number
 minute = 0;
 
 function preload(){           //load the first song on preload
-    song = loadSound('audio/'+songs[currentSong]);
+    song = loadSound('Audio/'+songs[currentSong]);
 
 /*    songs[0] = loadSound('audio/Please Dont Go.mp3');
     songs[1] = loadSound('audio/7 Years.mp3');
