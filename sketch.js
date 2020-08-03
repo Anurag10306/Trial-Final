@@ -1,6 +1,12 @@
 var form;
 var song;
-var songs = ['Please Dont Go.mp3','7 Years.mp3','Drag Me Down.mp3','Rescue Me.mp3','Shape of You.mp3','The Man.mp3'];
+var songs = new Array();//['Please Dont Go.mp3','7 Years.mp3','Drag Me Down.mp3','Rescue Me.mp3','Shape of You.mp3','The Man.mp3'];
+songs[0] = 'Please Dont Go.mp3';
+songs[1] = '7 Years.mp3';
+songs[2] = 'Drag Me Down.mp3';
+songs[3] = 'Rescue Me.mp3';
+songs[4] = 'Shape of You.mp3';
+songs[5] = 'The Man.mp3';
 var cover;
 var covers = new Array();
 var play,pause,next,previous;
@@ -17,6 +23,14 @@ minute = 0;
 
 function preload(){           //load the first song on preload
     song = loadSound('audio/'+songs[currentSong]);
+
+/*    songs[0] = loadSound('audio/Please Dont Go.mp3');
+    songs[1] = loadSound('audio/7 Years.mp3');
+    songs[2] = loadSound('audio/Drag Me Down.mp3');
+    songs[3] = loadSound('audio/Rescue Me.mp3');
+    songs[4] = loadSound('audio/Shape of You.mp3');
+    songs[5] = loadSound('audio/The Man.mp3');*/
+
     covers[0] = loadImage('Audio1.jpg');
     covers[1] = loadImage('Audio2.jpg');
     covers[2] = loadImage('Audio3.png');
